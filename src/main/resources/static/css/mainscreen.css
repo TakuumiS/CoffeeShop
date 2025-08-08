@@ -1,3 +1,14 @@
-body{
-    background-image: url("../images/Coffee.jpg")
+.btn {
+    background-color: saddlebrown;
+    border-color: rosybrown;
+    border-radius: 4px;
+    color: white;
+
 }
+
+.btn:hover {
+    background-color: sandybrown; /* Green */
+    color: white;
+    border-color: rosybrown;
+}
+
