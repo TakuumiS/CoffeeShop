@@ -18,15 +18,16 @@
 
 </head>
 <body>
-<nav>
-    <a href="/about" class="btn btn-info">About</a>
-</nav>
-
 
 <div class="container">
-    <h1>Takumi's Coffee Shop</h1>
+    <div class="title-nav">
+        <h1>Takumi's Coffee Shop</h1>
+        <nav>
+            <a href="/about" class="btn btn-info">About</a>
+        </nav>
+    </div>
     <hr>
-    <h2>Signature Lattes</h2>
+    <h2>Ingredients</h2>
     <form th:action="@{/mainscreen}">
         Filter: <input type="text" name="partkeyword" id="partkeyword" size="50" th:value="${partkeyword}" required />
         &nbsp;
@@ -58,7 +59,7 @@
         </tr>
         </tbody>
     </table>
-    <h2>Speciality Coffee Beans</h2>
+    <h2>Speciality Lattes</h2>
     <form th:action="@{/mainscreen}">
         Filter: <input type="text" name="productkeyword" id="productkeyword" size="50" th:value="${productkeyword}" required />
         &nbsp;

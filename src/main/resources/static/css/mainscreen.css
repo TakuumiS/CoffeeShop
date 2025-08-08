@@ -12,3 +12,19 @@
     border-color: rosybrown;
 }
 
+.title-nav {
+    display: flex;                  /* Arrange h1 and nav side by side */
+    align-items: center;            /* Vertically center them */
+    justify-content: space-between; /* Push h1 left, nav right */
+}
+
+.title-nav h1 {
+    margin-top: 25px;
+}
+
+.title-nav nav {
+    margin-top: 25px;
+}
+
+
+
