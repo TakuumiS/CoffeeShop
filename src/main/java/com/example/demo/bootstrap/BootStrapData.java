@@ -49,13 +49,17 @@ public class BootStrapData implements CommandLineRunner {
             mochi.setName("Homemade Mochi");
             mochi.setPrice(5);
             mochi.setInv(20);
+            mochi.setMinInv(0);
+            mochi.setMaxInv(100);
             inhousePartRepository.save(mochi);
 
             InhousePart brule = new InhousePart();
             brule.setId(2);
-            brule.setName("Homemade Brule");
+            brule.setName("Creme Brule");
             brule.setPrice(8);
             brule.setInv(10);
+            brule.setMinInv(0);
+            brule.setMaxInv(100);
             inhousePartRepository.save(brule);
 
             InhousePart strawberry = new InhousePart();
@@ -63,6 +67,8 @@ public class BootStrapData implements CommandLineRunner {
             strawberry.setName("Strawberry puree");
             strawberry.setPrice(6);
             strawberry.setInv(10);
+            strawberry.setMinInv(0);
+            strawberry.setMaxInv(100);
             inhousePartRepository.save(strawberry);
 
         }
@@ -75,6 +81,8 @@ public class BootStrapData implements CommandLineRunner {
             milk.setName("Hokkaido Milk");
             milk.setPrice(10);
             milk.setInv(10);
+            milk.setMinInv(0);
+            milk.setMaxInv(100);
             outsourcedPartRepository.save(milk);
 
             OutsourcedPart matcha = new OutsourcedPart();
@@ -83,6 +91,8 @@ public class BootStrapData implements CommandLineRunner {
             matcha.setName("Matcha");
             matcha.setPrice(12);
             matcha.setInv(10);
+            matcha.setMinInv(0);
+            matcha.setMaxInv(100);
             outsourcedPartRepository.save(matcha);
 
         }
@@ -92,7 +102,7 @@ public class BootStrapData implements CommandLineRunner {
             Product strawberryLatte = new Product("Strawberry Latte", 12, 30 );
             Product matchaLatte = new Product("Matcha Latte", 14, 35 );
             Product mochiLatte = new Product("Mochi Latte", 16, 40 );
-            Product bruleLatte = new Product("Brule Latte", 18, 45 );
+            Product bruleLatte = new Product("Creme Brule Latte", 18, 45 );
 
             productRepository.save(latte);
             productRepository.save(strawberryLatte);
