@@ -47,27 +47,27 @@ public class BootStrapData implements CommandLineRunner {
             InhousePart mochi = new InhousePart();
             mochi.setId(1);
             mochi.setName("Homemade Mochi");
-            mochi.setPrice(5);
+            mochi.setPrice(1);
             mochi.setInv(20);
-            mochi.setMinInv(0);
+            mochi.setMinInv(5);
             mochi.setMaxInv(100);
             inhousePartRepository.save(mochi);
 
             InhousePart brule = new InhousePart();
             brule.setId(2);
             brule.setName("Creme Brule");
-            brule.setPrice(8);
+            brule.setPrice(2);
             brule.setInv(10);
-            brule.setMinInv(0);
+            brule.setMinInv(5);
             brule.setMaxInv(100);
             inhousePartRepository.save(brule);
 
             InhousePart strawberry = new InhousePart();
-            strawberry.setId(3);
+            strawberry.setId(1);
             strawberry.setName("Strawberry puree");
             strawberry.setPrice(6);
             strawberry.setInv(10);
-            strawberry.setMinInv(0);
+            strawberry.setMinInv(5);
             strawberry.setMaxInv(100);
             inhousePartRepository.save(strawberry);
 
@@ -79,9 +79,9 @@ public class BootStrapData implements CommandLineRunner {
             milk.setCompanyName("Hokkaido Milk Co.");
             milk.setId(4);
             milk.setName("Hokkaido Milk");
-            milk.setPrice(10);
+            milk.setPrice(1);
             milk.setInv(10);
-            milk.setMinInv(0);
+            milk.setMinInv(2);
             milk.setMaxInv(100);
             outsourcedPartRepository.save(milk);
 
@@ -89,20 +89,20 @@ public class BootStrapData implements CommandLineRunner {
             matcha.setCompanyName("Matcha Co.");
             matcha.setId(5);
             matcha.setName("Matcha");
-            matcha.setPrice(12);
+            matcha.setPrice(3);
             matcha.setInv(10);
-            matcha.setMinInv(0);
-            matcha.setMaxInv(100);
+            matcha.setMinInv(3);
+            matcha.setMaxInv(10);
             outsourcedPartRepository.save(matcha);
 
         }
 
         if(productRepository.count()==0) {
-            Product latte = new Product("Hokkaido Latte", 10, 25 );
-            Product strawberryLatte = new Product("Strawberry Latte", 12, 30 );
-            Product matchaLatte = new Product("Matcha Latte", 14, 35 );
-            Product mochiLatte = new Product("Mochi Latte", 16, 40 );
-            Product bruleLatte = new Product("Creme Brule Latte", 18, 45 );
+            Product latte = new Product(20,"Hokkaido Latte", 10, 25 );
+            Product strawberryLatte = new Product(30, "Strawberry Latte", 12, 30 );
+            Product matchaLatte = new Product(40, "Matcha Latte", 14, 35 );
+            Product mochiLatte = new Product(50, "Mochi Latte", 16, 40 );
+            Product bruleLatte = new Product(60, "Creme Brule Latte", 18, 45 );
 
             productRepository.save(latte);
             productRepository.save(strawberryLatte);
