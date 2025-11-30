@@ -13,12 +13,12 @@ import java.lang.annotation.Target;
  *
  *
  */
-
-@Constraint(validatedBy = {DeletePartValidator.class})
+@Constraint(validatedBy = {InventoryValidator.class})
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface ValidDeletePart {
-    String message() default "Part cannot be deleted if used in a product.";
+public @interface ValidInventory {
+    String message() default "Inventory error!";
     Class<?> [] groups() default {};
     Class<? extends Payload> [] payload() default {};
+
 }
